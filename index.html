@@ -20,7 +20,7 @@
     --parchment:#efe7d3;
   }
   *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
+  html{scroll-behavior:smooth;overflow-x:hidden;}
   body{
     font-family:'Inter',sans-serif;
     color:var(--ink);
@@ -59,6 +59,7 @@
     background-size:cover;background-position:center;
     color:var(--cream);
     padding:80px 32px;
+    position:relative;
     overflow:hidden;
   }
   .hero::before,.hero::after{
@@ -402,6 +403,30 @@
     border-top:1px solid rgba(200,160,78,0.2);padding-top:30px;margin-top:14px;
     font-family:'Inter',sans-serif;font-size:.82rem;
     color:rgba(246,241,228,0.5);line-height:1.7;
+  }
+  /* ---------- MOBILE RESPONSIVE ---------- */
+  @media (max-width:640px){
+    .wrap{padding:0 20px;}
+    .hero{padding:72px 20px;}
+    .hero::before{width:380px;height:380px;top:-150px;left:-150px;}
+    .hero::after{width:300px;height:300px;bottom:-130px;right:-110px;}
+    .seal-logo{width:104px;height:104px;margin-bottom:26px;}
+    .eyebrow{letter-spacing:.3em;margin-bottom:20px;}
+    .verse{padding:60px 20px;}
+    .block{padding:60px 20px;}
+    .block h2{margin-bottom:22px;}
+    .kicker{letter-spacing:.24em;}
+    .math-grid{margin-top:36px;gap:18px;}
+    .ask-band{padding:68px 20px;}
+    .ask-band::before{width:340px;height:340px;top:-130px;right:-150px;}
+    .ask-list li{padding-left:32px;}
+    .survey{padding:68px 20px;}
+    .btn{padding:18px 36px;letter-spacing:.1em;}
+    .team{padding:68px 0;}
+    .team-head{margin-bottom:40px;}
+    .contact{padding:68px 20px 52px;}
+    .contact::before{font-size:11rem;top:-12px;}
+    .scroll-cue{letter-spacing:.24em;}
   }
 </style>
 </head>
